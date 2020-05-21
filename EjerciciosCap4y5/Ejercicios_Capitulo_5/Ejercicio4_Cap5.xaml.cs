@@ -24,23 +24,13 @@ namespace EjerciciosCap4y5
 
         private void ButtonClick_Calcular(object sender, RoutedEventArgs e)
         {
-            double i, fact = 1, numero;
+            double i, factorial = 1, numero;
             numero = double.Parse(Numero.Text);
             for (i = 1; i <= numero; i++)
             {
-                fact = fact * i;
+                factorial = factorial * i;
             }
-            Resultado.Text = Convert.ToString(fact);
+            Resultado.Text = Convert.ToString(factorial);
         }
     }
 }
-/**
-
-    int numero;
-    int potencia;
-        numero = int.Parse(Numero2.Text);
-        potencia = int.Parse(Potencia.Text);
-        double elevado = Math.Pow(numero, potencia);
-    ResultadoEjercicio2.Text = Convert.ToString(elevado);
-
- */

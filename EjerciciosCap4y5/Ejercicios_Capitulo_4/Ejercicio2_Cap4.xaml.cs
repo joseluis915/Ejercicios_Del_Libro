@@ -24,8 +24,8 @@ namespace EjerciciosCap4y5
 
         private void ButtonClick_Ejercicio2_Cap4(object sender, RoutedEventArgs e)
         {
-            int numero;
-            int potencia;
+            double numero;
+            double potencia;
             numero = int.Parse(Numero2.Text);
             potencia = int.Parse(Potencia.Text);
             double elevado = Math.Pow(numero, potencia);
