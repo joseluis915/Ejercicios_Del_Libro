@@ -21,5 +21,12 @@ namespace EjerciciosCap4y5
         {
             InitializeComponent();
         }
+
+        private void ButtonClick_Ejercicio4(object sender, RoutedEventArgs e)
+        {
+            Ejercicio4_Cap5 e4 = new Ejercicio4_Cap5();
+            e4.Show();
+            this.Close();
+        }
     }
 }
