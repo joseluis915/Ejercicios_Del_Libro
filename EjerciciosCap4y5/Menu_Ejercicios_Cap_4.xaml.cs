@@ -38,7 +38,9 @@ namespace EjerciciosCap4y5
 
         private void ButtonClick_Ejercicio5(object sender, RoutedEventArgs e)
         {
-
+            Ejercicio5_Cap4 e5 = new Ejercicio5_Cap4();
+            e5.Show();
+            this.Close();
         }
     }
 }
