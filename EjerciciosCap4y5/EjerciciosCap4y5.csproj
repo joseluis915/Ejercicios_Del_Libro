@@ -6,8 +6,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Ejercicios_Capitulo_5\" />
-  </ItemGroup>
-
 </Project>
