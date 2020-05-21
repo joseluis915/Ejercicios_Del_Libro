@@ -15,9 +15,9 @@ namespace EjerciciosCap4y5.Capitulo_4
     /// <summary>
     /// Interaction logic for Ejercicio5.xaml
     /// </summary>
-    public partial class Ejercicio5 : Window
+    public partial class Ejercicio5_Cap4 : Window
     {
-        public Ejercicio5()
+        public Ejercicio5_Cap4()
         {
             InitializeComponent();
         }
