@@ -1,0 +1,25 @@
+﻿<Window x:Class="EjerciciosCap4y5.Ejercicio1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EjerciciosCap4y5"
+        mc:Ignorable="d"
+        Title="Ejercicio #1" Height="360" Width="500" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="0,-10,0,0">
+            <StackPanel HorizontalAlignment="Center">
+                <Label Content="Capitulo 4" FontWeight="Bold" HorizontalContentAlignment="Center" FontSize="20" Height="35" Margin="0,0,0,0" />
+                <Label Content="#1 Programa que muestre la tabla de multiplicar del 1 al 10 de cualquier número." FontWeight="Bold" Margin="0,0,0,0" />
+                    <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Height="35">
+                        <Label Content="Digite un numero: " FontWeight="Bold" VerticalContentAlignment="Center" FontSize="16"/>
+                        <TextBox x:Name="NumeroDigitado" Width="100" FontSize="18" VerticalAlignment="Stretch" HorizontalAlignment="Center" VerticalContentAlignment="Center" />
+                        <Button Margin="50,0,0,0" Width="120" Click="ButtonClick_Calcular_Ejercicio1">
+                            <Label Content="Calcular" FontWeight="Bold" Padding="0,0,0,0" FontSize="16"/>
+                        </Button>
+                    </StackPanel>
+                <ListBox x:Name="ResultadoEjercicio1" Height="210" Margin="0,10,0,0" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
