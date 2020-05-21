@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="icons8-documento-50.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons8-documento-50.png" />
+  </ItemGroup>
+
 </Project>

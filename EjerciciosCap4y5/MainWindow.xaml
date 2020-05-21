@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EjerciciosCap4y5"
         mc:Ignorable="d"
-        Title="MENU PRINCIPAL" Height="200" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+        Title="MENU PRINCIPAL" Height="200" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/icons8-documento-50.png" >
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,-15,0,0">
                 <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Center">
