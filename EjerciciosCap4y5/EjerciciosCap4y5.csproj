@@ -7,11 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Ejercicios_Capitulo_4\icons8-calculadora-48.png" />
+    <None Remove="Ejercicios_Capitulo_4\icons8-escoba-48.png" />
+    <None Remove="icons8-búsqueda-50.png" />
     <None Remove="icons8-documento-50.png" />
+    <None Remove="icons8-entrar-48.png" />
+    <None Remove="icons8-más-50.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="icons8-calculadora-48.png" />
+    <Resource Include="icons8-escoba-48.png" />
+    <Resource Include="icons8-búsqueda-50.png" />
     <Resource Include="icons8-documento-50.png" />
+    <Resource Include="icons8-entrar-48.png" />
+    <Resource Include="icons8-más-50.png" />
   </ItemGroup>
 
 </Project>

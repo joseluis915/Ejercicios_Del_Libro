@@ -14,9 +14,12 @@
                     <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Height="35">
                         <Label Content="Digite un numero: " FontWeight="Bold" VerticalContentAlignment="Center" FontSize="16"/>
                         <TextBox x:Name="NumeroDigitado" Width="100" FontSize="18" VerticalAlignment="Stretch" HorizontalAlignment="Center" VerticalContentAlignment="Center" />
-                        <Button Margin="50,0,0,0" Width="120" Click="ButtonClick_Calcular_Ejercicio1">
-                            <Label Content="Calcular" FontWeight="Bold" Padding="0,0,0,0" FontSize="16"/>
-                        </Button>
+                        <Button Margin="50,0,0,0" Width="110" Click="ButtonClick_Calcular_Ejercicio1">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="/icons8-calculadora-48.png" Height="25" />
+                            <Label Content="Calcular" FontWeight="Bold" Padding="0,0,0,0" FontSize="18" VerticalContentAlignment="Center" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </Button>
                     </StackPanel>
                 <ListBox x:Name="ResultadoEjercicio1" Height="210" Margin="0,10,0,0" FontWeight="Bold"/>
             </StackPanel>
