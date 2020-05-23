@@ -49,13 +49,13 @@
                 <StackPanel Orientation="Horizontal" Margin="0,15,0,0" HorizontalAlignment="Center">
                     <Button Width="120" Height="35" Click="ButtonClick_Ejercicio5_Cap4">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/icons8-calculadora-48.png" Height="25" />
+                            <Image Source="/Resources/Carcular.png" Height="25" />
                             <Label Content="Calcular" FontWeight="Bold" Padding="0,0,0,0" FontSize="20" Margin="5,0,0,0"/>
                         </StackPanel>
                     </Button>
                     <Button Width="110" Height="35" Click="ButtonClick_Ejercicio5_Cap4_Limpiar" Margin="50,0,0,0">
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="/icons8-escoba-48.png" Height="25" />
+                            <Image Source="/Resources/Limpiar.png" Height="25" />
                             <Label Content="Limpiar" FontWeight="Bold" Padding="0,0,0,0" FontSize="20" Margin="2,0,0,0"/>
                         </StackPanel>
                     </Button>

@@ -19,7 +19,7 @@
                 <StackPanel Margin="0,15,0,0">
                     <Button Width="130" Height="35" Click="ButtonClick_Calcular">
                         <StackPanel Orientation="Horizontal">
-                            <Image  Height="25" Source="/icons8-calculadora-48.png" />
+                            <Image  Height="25" Source="/Resources/Carcular.png" />
                             <Label Content="Convertir" FontWeight="Bold" Padding="0,0,0,0" FontSize="20" Margin="5,0,0,0"/>
                         </StackPanel>
                     </Button>

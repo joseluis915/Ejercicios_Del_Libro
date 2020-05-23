@@ -9,19 +9,52 @@
   <ItemGroup>
     <None Remove="Ejercicios_Capitulo_4\icons8-calculadora-48.png" />
     <None Remove="Ejercicios_Capitulo_4\icons8-escoba-48.png" />
-    <None Remove="icons8-búsqueda-50.png" />
-    <None Remove="icons8-documento-50.png" />
-    <None Remove="icons8-entrar-48.png" />
-    <None Remove="icons8-más-50.png" />
+    <None Remove="Resources\Agendar.png" />
+    <None Remove="Resources\Buscar.png" />
+    <None Remove="Resources\Carcular.png" />
+    <None Remove="Resources\Documento.png" />
+    <None Remove="Resources\Entrar.png" />
+    <None Remove="Resources\Guardar.png" />
+    <None Remove="Resources\Limpiar.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="icons8-calculadora-48.png" />
-    <Resource Include="icons8-escoba-48.png" />
-    <Resource Include="icons8-búsqueda-50.png" />
-    <Resource Include="icons8-documento-50.png" />
-    <Resource Include="icons8-entrar-48.png" />
-    <Resource Include="icons8-más-50.png" />
+    <Content Include="Resources\Agendar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Buscar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Carcular.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Documento.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Entrar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Guardar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Limpiar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
