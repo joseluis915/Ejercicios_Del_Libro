@@ -22,92 +22,78 @@ namespace EjerciciosCap4y5
         {
             InitializeComponent();
         }
-
-        private void ButtonClick_Ejercicio5_Cap4(object sender, RoutedEventArgs e)
+        double min = 0;
+        double max = 0;
+        double avg = 0;
+        private void AddEdades_Click(object sender, RoutedEventArgs e)
         {
-            double edad1 = Convert.ToDouble(Edad1.Text);
-            double edad2 = Convert.ToDouble(Edad2.Text);
-            double edad3 = Convert.ToDouble(Edad3.Text);
-            double edad4 = Convert.ToDouble(Edad4.Text);
-            double edad5 = Convert.ToDouble(Edad5.Text);
-            double edad6 = Convert.ToDouble(Edad6.Text);
-            double edad7 = Convert.ToDouble(Edad7.Text);
-            double edad8 = Convert.ToDouble(Edad8.Text);
-            double edad9 = Convert.ToDouble(Edad9.Text);
-            double edad10 = Convert.ToDouble(Edad10.Text);
-
-            double[] Edades = { edad1, edad2, edad3, edad4, edad5, edad6, edad7, edad8, edad9, edad10 };
-            
-            Min.Text = Convert.ToString(Edades.Min());
-            Max.Text = Convert.ToString(Edades.Max());
-            Promedio.Text = Convert.ToString(Edades.Average());
+            try
+            {
+                if(EdadTextbox.Text.Trim() != "")
+                {
+                    EdadesListBox.Items.Add(double.Parse(EdadTextbox.Text));
+                    EdadTextbox.Text = "";
+                    EdadTextbox.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("El Campo (Edades) esta vacio.\n\nDigite una edad", "ERROR", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    EdadTextbox.Focus();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("El valor digitado en el campo (Edades) no es un numero.\n\nPorfavor, digite un numero.", "ERROR", MessageBoxButton.OK, MessageBoxImage.Warning);
+                EdadTextbox.Focus();
+            }
         }
-
         private void ButtonClick_Ejercicio5_Cap4_Limpiar(object sender, RoutedEventArgs e)
         {
-            Edad1.Text = "0";
-            Edad2.Text = "0";
-            Edad3.Text = "0";
-            Edad4.Text = "0";
-            Edad5.Text = "0";
-            Edad6.Text = "0";
-            Edad7.Text = "0";
-            Edad8.Text = "0";
-            Edad9.Text = "0";
-            Edad10.Text = "0";
             Min.Text = string.Empty;
             Max.Text = string.Empty;
             Promedio.Text = string.Empty;
+            EdadesListBox.Items.Clear();
         }
-
-        private void BorrarSeleccion1(object sender, RoutedEventArgs e)
+        private void ButtonClick_Ejercicio5_Cap4_Calcular(object sender, RoutedEventArgs e)
         {
-            Edad1.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion2(object sender, RoutedEventArgs e)
-        {
-            Edad2.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion3(object sender, RoutedEventArgs e)
-        {
-            Edad3.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion4(object sender, RoutedEventArgs e)
-        {
-            Edad4.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion5(object sender, RoutedEventArgs e)
-        {
-            Edad5.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion6(object sender, RoutedEventArgs e)
-        {
-            Edad6.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion7(object sender, RoutedEventArgs e)
-        {
-            Edad7.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion8(object sender, RoutedEventArgs e)
-        {
-            Edad8.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion9(object sender, RoutedEventArgs e)
-        {
-            Edad9.Text = string.Empty;
-        }
-
-        private void BorrarSeleccion10(object sender, RoutedEventArgs e)
-        {
-            Edad10.Text = string.Empty;
+            ///Minimo
+            min = Convert.ToDouble(EdadesListBox.Items[0]);
+            for(int i=0; i<EdadesListBox.Items.Count; i++)
+            {
+                if(min>Convert.ToDouble(EdadesListBox.Items[i]))
+                {
+                    min = Convert.ToDouble(EdadesListBox.Items[i]);
+                }
+            }
+            Min.Text = Convert.ToString(min);
+///============================================[ Maximo ]============================================
+            max = Convert.ToDouble(EdadesListBox.Items[0]);
+            for (int i = 0; i < EdadesListBox.Items.Count; i++)
+            {
+                if (max < Convert.ToDouble(EdadesListBox.Items[i]))
+                {
+                    max = Convert.ToDouble(EdadesListBox.Items[i]);
+                }
+            }
+            Max.Text = Convert.ToString(max);
+///============================================[ Promedio ]============================================
+            double suma = 0;
+            for (int i = 0; i < EdadesListBox.Items.Count; i++)
+            {
+                suma += Convert.ToDouble(EdadesListBox.Items[i]);
+                avg = Math.Round(suma / EdadesListBox.Items.Count, 2);
+            }
+            Promedio.Text = Convert.ToString(avg);
         }
     }
 }
+/**private void ButtonClick_Ejercicio5_Cap4(object sender, RoutedEventArgs e)
+{
+    double edades = Convert.ToDouble(Edad1.Text);
+
+    double[] Edades = { edades };
+
+    Min.Text = Convert.ToString(Edades.Min());
+    Max.Text = Convert.ToString(Edades.Max());
+    Promedio.Text = Convert.ToString(Edades.Average());
+}*/

@@ -129,5 +129,15 @@ namespace EjerciciosCap4y5.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Mas {
+            get {
+                object obj = ResourceManager.GetObject("Mas", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
