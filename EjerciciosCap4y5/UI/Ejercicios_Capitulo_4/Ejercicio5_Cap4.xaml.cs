@@ -44,6 +44,7 @@ namespace EjerciciosCap4y5
             catch
             {
                 MessageBox.Show("El valor digitado en el campo (Edades) no es un numero.\n\nPorfavor, digite un numero.", "ERROR", MessageBoxButton.OK, MessageBoxImage.Warning);
+                EdadTextbox.Text = "";
                 EdadTextbox.Focus();
             }
         }
