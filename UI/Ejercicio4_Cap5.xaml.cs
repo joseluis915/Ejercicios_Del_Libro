@@ -1,14 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace EjerciciosCap4y5
 {
@@ -28,7 +19,7 @@ namespace EjerciciosCap4y5
             numero = double.Parse(Numero.Text);
             for (i = 1; i <= numero; i++)
             {
-                factorial = factorial * i;  
+                factorial = factorial * i;
             }
             Resultado.Text = Convert.ToString(factorial);
         }

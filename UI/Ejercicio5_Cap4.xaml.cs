@@ -1,15 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace EjerciciosCap4y5
 {
@@ -29,7 +19,7 @@ namespace EjerciciosCap4y5
         {
             try
             {
-                if(EdadTextbox.Text.Trim() != "")
+                if (EdadTextbox.Text.Trim() != "")
                 {
                     EdadesListBox.Items.Add(double.Parse(EdadTextbox.Text));
                     EdadTextbox.Text = "";
@@ -59,15 +49,15 @@ namespace EjerciciosCap4y5
         {
             ///Minimo
             min = Convert.ToDouble(EdadesListBox.Items[0]);
-            for(int i=0; i<EdadesListBox.Items.Count; i++)
+            for (int i = 0; i < EdadesListBox.Items.Count; i++)
             {
-                if(min>Convert.ToDouble(EdadesListBox.Items[i]))
+                if (min > Convert.ToDouble(EdadesListBox.Items[i]))
                 {
                     min = Convert.ToDouble(EdadesListBox.Items[i]);
                 }
             }
             Min.Text = Convert.ToString(min);
-///============================================[ Maximo ]============================================
+            ///============================================[ Maximo ]============================================
             max = Convert.ToDouble(EdadesListBox.Items[0]);
             for (int i = 0; i < EdadesListBox.Items.Count; i++)
             {
@@ -77,7 +67,7 @@ namespace EjerciciosCap4y5
                 }
             }
             Max.Text = Convert.ToString(max);
-///============================================[ Promedio ]============================================
+            ///============================================[ Promedio ]============================================
             double suma = 0;
             for (int i = 0; i < EdadesListBox.Items.Count; i++)
             {
