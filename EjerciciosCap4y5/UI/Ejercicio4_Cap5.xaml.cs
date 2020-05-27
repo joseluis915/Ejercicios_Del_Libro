@@ -28,7 +28,7 @@ namespace EjerciciosCap4y5
             numero = double.Parse(Numero.Text);
             for (i = 1; i <= numero; i++)
             {
-                factorial = factorial * i;
+                factorial = factorial * i;  
             }
             Resultado.Text = Convert.ToString(factorial);
         }
