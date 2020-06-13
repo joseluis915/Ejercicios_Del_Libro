@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicios_Del_Libro.UI"
         mc:Ignorable="d"
-        Title="Capitulo 9" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Capitulo 9" Height="450" Width="600" WindowStartupLocation="CenterScreen">
     <Grid>
         
     </Grid>

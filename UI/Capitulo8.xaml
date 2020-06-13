@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicios_Del_Libro.UI"
         mc:Ignorable="d"
-        Title="Capitulo 8" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Capitulo 9" Height="450" Width="600" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" Width="300">
+            <!--———————————————————————————————————————————[ Ejercicio #3 ]———————————————————————————————————————————-->
+            <StackPanel Orientation="Vertical">
+                <Label Content="Ejercicio #3" Width="200" HorizontalContentAlignment="Center"/>
+
+                <Label Content="La hora actual es: "/>
+                <TextBox x:Name="HoraTextBox" Height="25" IsReadOnly="True"/>
+
+                <Label Content="La fecha actual es: " Margin="0,10,0,0"/>
+                <TextBox x:Name="FechaTextBox" Height="25" IsReadOnly="True"/>
+                <!--—————————————————————————————————[ Boton mostar fecha y hora ]—————————————————————————————————-->
+                <Button x:Name="Mostar" Margin="0,20,0,0" HorizontalAlignment="Center" Click="MostarButton_Click">
+                    <StackPanel>
+                        <Image />
+                        <Label Content="Mostrar Hora y Fecha"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Window>
