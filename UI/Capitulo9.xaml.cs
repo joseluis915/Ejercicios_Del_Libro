@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace Ejercicios_Del_Libro.UI
 {
     /// <summary>
-    /// Interaction logic for Cap7_Ejercicios.xaml
+    /// Interaction logic for Cap9_Ejercicios.xaml
     /// </summary>
-    public partial class Cap7_Ejercicios : Window
+    public partial class Capitulo9 : Window
     {
-        public Cap7_Ejercicios()
+        public Capitulo9()
         {
             InitializeComponent();
         }

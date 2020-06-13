@@ -123,6 +123,16 @@ namespace Ejercicios_Del_Libro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] Home {
+            get {
+                object obj = ResourceManager.GetObject("Home", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Limpiar {
             get {
                 object obj = ResourceManager.GetObject("Limpiar", resourceCulture);

@@ -5,46 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EjerciciosCap4y5"
         mc:Ignorable="d"
-        Title="MENU PRINCIPAL" Height="310" Width="390" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/Resources/Agendar.png">
+        Title="MENU PRINCIPAL" Height="400" Width="400" WindowStartupLocation="CenterScreen" Icon="/Resources/Home.png">
     <Grid>
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" >
-                <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Center">
-                    <Label Content="Menu Prinicipal" FontWeight="Bold" Height="35" FontSize="28" Padding="0,0,0,0" />
-                </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Height="50">
-                <Label Content="Seleccione un capitulo: " FontWeight="Bold" FontSize="20" FontStyle="Italic" VerticalAlignment="Center"/>
-            </StackPanel>
-            
-        <StackPanel Orientation="Horizontal" Height="60" Margin="0,10,0,0" HorizontalAlignment="Center">
-                <Button Width="160" Click="ButtonClick_Cap4_MenuPrincipal">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/Documento.png" Height="35" />
-                        <Label Content="Capitulo 4" FontSize="22" FontWeight="Bold" Foreground="#E5000000" VerticalContentAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-                <Button Width="160" Margin="25,0,0,0" Click="ButtonClick_Cap5_MenuPrincipal" >
-                <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/Documento.png" Height="35" />
-                        <Label Content="Capitulo 5" FontSize="22" FontWeight="Bold" Foreground="#E5000000" VerticalContentAlignment="Center"/>
-                </StackPanel>
-            </Button>
+        <StackPanel>
+            <!--——————————————————————————————————————————————[ MENU ITEMS ]——————————————————————————————————————————————-->
+            <Menu Height="24" FontSize="15">
+                <MenuItem Header="Ejercicios">
+                    <MenuItem x:Name="eCapitulo4MenuItem" Click="eCapitulo4MenuItemMenuItem_Click" Header="Capitulo #4"/>
+                    <MenuItem x:Name="eCapitulo5MenuItem" Click="eCapitulo5MenuItemMenuItem_Click" Header="Capitulo #5"/>
+                    <MenuItem x:Name="eCapitulo6MenuItem" Click="eCapitulo6MenuItemMenuItem_Click" Header="Capitulo #6"/>
+                    <MenuItem x:Name="eCapitulo7MenuItem" Click="eCapitulo7MenuItemMenuItem_Click" Header="Capitulo #7"/>
+                    <MenuItem x:Name="eCapitulo8MenuItem" Click="eCapitulo8MenuItemMenuItem_Click" Header="Capitulo #8"/>
+                    <MenuItem x:Name="eCapitulo9MenuItem" Click="eCapitulo9MenuItemMenuItem_Click" Header="Capitulo #9"/>
+                </MenuItem>
+
+                <MenuItem Header="Ayuda">
+                    <Menu/>
+                </MenuItem>
+            </Menu>
         </StackPanel>
-
-            <StackPanel Orientation="Horizontal" Height="60" Margin="0,20,0,0" HorizontalAlignment="Center">
-                <Button Width="160" Click="ButtonClick_Cap6_MenuPrincipal">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/Documento.png" Height="35" />
-                        <Label Content="Capitulo 6" FontSize="22" FontWeight="Bold" Foreground="#E5000000" VerticalContentAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-                <Button Width="160" Margin="25,0,0,0" Click="ButtonClick_Cap7_MenuPrincipal" >
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/Documento.png" Height="35" />
-                        <Label Content="Capitulo 7" FontSize="22" FontWeight="Bold" Foreground="#E5000000" VerticalContentAlignment="Center"/>
-                    </StackPanel>
-                </Button>
+        <!--——————————————————————————————————————————————[ MENU PRINCIPAL ]——————————————————————————————————————————————-->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="/Resources/Home.png" Width="70"/>
+            <Label Content="Menu Principal" FontWeight="Bold" Height="50" FontSize="36" HorizontalAlignment="Center" />
+            <!--——————————————————————————————————————————————[ INFORMACION ]——————————————————————————————————————————————-->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <Label Content="Creacion:" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+                <Label Content="23/05/2020" FontSize="18" />
             </StackPanel>
 
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Ultima modificacion:" FontWeight="Bold" FontSize="18" FontStyle="Italic"/>
+                <Label Content="13/06/2020" FontSize="18" />
+            </StackPanel>
+
+            <Label Content="©2020 José Luis Hernández" FontWeight="Bold"  FontSize="16" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+            <Label Content="Version: Beta 3.0" FontWeight="Bold" FontSize="16" FontStyle="Italic" HorizontalAlignment="Center"/>
+            <!--———————————————————————————————————————————————————————————————————————————————————————————————-->
         </StackPanel>
     </Grid>
 </Window>

@@ -3,9 +3,6 @@ using System.Windows;
 
 namespace EjerciciosCap4y5
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -13,28 +10,40 @@ namespace EjerciciosCap4y5
             InitializeComponent();
         }
 
-        private void ButtonClick_Cap4_MenuPrincipal(object sender, RoutedEventArgs e)
+        private void eCapitulo4MenuItemMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Menu_Cap_4 ec4 = new Menu_Cap_4();
-            ec4.Show();
+            Capitulo4 Cap4 = new Capitulo4();
+            Cap4.Show();
         }
 
-        private void ButtonClick_Cap5_MenuPrincipal(object sender, RoutedEventArgs e)
+        private void eCapitulo5MenuItemMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Menu_Cap_5 ec5 = new Menu_Cap_5();
-            ec5.Show();
+            Capitulo5 Cap5 = new Capitulo5();
+            Cap5.Show();
         }
 
-        private void ButtonClick_Cap6_MenuPrincipal(object sender, RoutedEventArgs e)
+        private void eCapitulo6MenuItemMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Cap6_Ejercicios Cap6 = new Cap6_Ejercicios();
+            Capitulo6 Cap6 = new Capitulo6();
             Cap6.Show();
         }
 
-        private void ButtonClick_Cap7_MenuPrincipal(object sender, RoutedEventArgs e)
+        private void eCapitulo7MenuItemMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Cap7_Ejercicios Cap7 = new Cap7_Ejercicios();
+            Capitulo7 Cap7 = new Capitulo7();
             Cap7.Show();
+        }
+
+        private void eCapitulo8MenuItemMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Capitulo8 Cap8 = new Capitulo8();
+            Cap8.Show();
+        }
+
+        private void eCapitulo9MenuItemMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Capitulo9 Cap9 = new Capitulo9();
+            Cap9.Show();
         }
     }
 }
