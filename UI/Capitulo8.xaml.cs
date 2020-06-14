@@ -26,7 +26,7 @@ namespace Ejercicios_Del_Libro.UI
         private void MostarButton_Click(object sender, RoutedEventArgs e)
         {
             DateTime Hoy = DateTime.Now;
-            HoraTextBox.Text = Hoy.ToString("hh:MM:ss tt");
+            HoraTextBox.Text = Hoy.ToString("hh:mm:ss tt");
             FechaTextBox.Text = Hoy.ToString("dd/MMMMM/yyyy");
 
             //——————[ Mostrar la fecha y hora actual con el formato que tiene la hora del sistema. ]——————
