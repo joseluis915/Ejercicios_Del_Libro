@@ -5,8 +5,97 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicios_Del_Libro.UI"
         mc:Ignorable="d"
-        Title="Capitulo 9" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+        Title="Capitulo " Height="425" Width="700" WindowStartupLocation="CenterScreen" Icon="/Resources/Documento.png">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <!--———————————————————————————————————————————[ EJERCICIO #1 ]———————————————————————————————————————————-->
+            <StackPanel Orientation="Vertical" Width="200">
+                <Label Content="Ejercicio #1" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+                <Label Content="Nombre del Producto"/>
+                <TextBox x:Name="nProductoTextBox" Height="30"/>
+
+                <!--—————————————————————————————————[ Boton Agregar ]—————————————————————————————————-->
+                <Button x:Name="aProductoButton" Click="aProductoButton_Click" Margin="0,10,0,0" HorizontalAlignment="Center" Height="30" >
+                    <StackPanel Orientation="Horizontal" Height="25">
+                        <Image Source="/Resources/Mas.png" Width="20" />
+                        <Label Content="Agregar Producto" Height="30" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!--—————————————————————————————————[ ListBox ]—————————————————————————————————-->
+                <ListBox x:Name="ProductosListBox" Height="245" Margin="0,10,0,0"/>
+            </StackPanel>
+
+            <!--———————————————————————————————————————————[ Ejercicio #3 ]———————————————————————————————————————————-->
+            <StackPanel Orientation="Vertical" Width="200" Margin="25,0,0,0">
+                <Label Content="Ejercicio #3" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+                <!--—————————————————————————————————[ Datos del Dueño ]—————————————————————————————————-->
+                <Label Content="Datos del dueño:" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Label Content="Nombre"/>
+                    <TextBox x:Name="dNombreTextBox" Width="147"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0" HorizontalAlignment="Right">
+                    <Label Content="Edad"/>
+                    <TextBox x:Name="dEdadTextBox" Width="147"/>
+                </StackPanel>
+
+                <!--—————————————————————————————————[ Datos de la mascota ]—————————————————————————————————-->
+                <Label Content="Datos de la mascota:" FontWeight="Bold"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Label Content="Especie"/>
+                    <TextBox x:Name="mEspecieTextBox" Width="147" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0" HorizontalAlignment="Right">
+                    <Label Content="Nombre"/>
+                    <TextBox x:Name="mNombreTextBox" Width="147" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0" HorizontalAlignment="Right">
+                    <Label Content="Edad"/>
+                    <TextBox x:Name="mEdadTextBox" Height="25" Width="147"/>
+                </StackPanel>
+
+                <!--—————————————————————————————————[ Boton Guardar - Ejercicio #3 ]—————————————————————————————————-->
+                <Button x:Name="OrdenarButton"  Margin="0,15,0,0" HorizontalAlignment="Center" Click="GuardarButton_Click" >
+                    <StackPanel Orientation="Horizontal" Height="25">
+                        <Image Source="/Resources/Guardar.png" />
+                        <Label Content="Guardar"/>
+                    </StackPanel>
+                </Button>
+                <!--—————————————————————————————————[ DuenoMascota ListBox ]—————————————————————————————————-->
+                <TextBox x:Name="DuenoMascotaTextBox" Height="100" Margin="0,10,0,0" />
+            </StackPanel>
+
+            <!--———————————————————————————————————————————[ EJERCICIO #4 ]———————————————————————————————————————————-->
+            <StackPanel Orientation="Vertical" Width="200" Margin="25,0,0,0">
+                <Label Content="Ejercicio #4" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+                <Label Content="Codigo de Neumatico (1-4)"/>
+                <TextBox x:Name="CodNeumaticoTextBox" Height="30" />
+
+                <!--—————————————————————————————————[ Boton Agregar ]—————————————————————————————————-->
+                <Button x:Name="nBuscarButton" Margin="0,10,0,0" HorizontalAlignment="Center" Height="30" Click="nBuscarButton_Click" >
+                    <StackPanel Orientation="Horizontal" Height="25">
+                        <Image Source="/Resources/Buscar.png" Width="20" />
+                        <Label Content="Buscar" Height="30" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
+                <!--—————————————————————————————————[ Resultado de busqueda ]—————————————————————————————————-->
+                <Label Content="Tipo de Neumatico" Margin="0,10,0,0"/>
+                <TextBox x:Name="nResultadoTextbox"  Height="30" />
+
+                <!--—————————————————————————————————[ Boton Limpiar Todo ]—————————————————————————————————-->
+                <Button x:Name="LimpiarTodoButton" Click="LimpiarTodoButton_Click" Margin="0,70,0,0" HorizontalAlignment="Center" Height="40">
+                    <StackPanel Orientation="Horizontal" Height="25">
+                        <Image Source="/Resources/Limpiar.png" Width="20" />
+                        <Label Content="Limpiar Todo" Height="30" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <!--——————————————————————————————————————————————————————————————————————————————————————————————————————-->
+        </StackPanel>
     </Grid>
 </Window>
