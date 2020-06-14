@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <!--———————————————————————————————————————————[ Ejercicio #3 ]———————————————————————————————————————————-->
-            <StackPanel Orientation="Vertical" Width="200">
+            <StackPanel Orientation="Vertical" Width="210">
                 <Label Content="Ejercicio #3" HorizontalContentAlignment="Center" FontWeight="Bold"/>
 
                 <Label Content="Hora Actual"/>
@@ -35,13 +35,13 @@
             <!--——————————————————————————————————————————————————————————————————————————————————————————————————————-->
 
             <!--———————————————————————————————————————————[ Ejercicio #5 ]———————————————————————————————————————————-->
-            <StackPanel Orientation="Vertical" Width="200" Margin="50,0,0,0">
+            <StackPanel Orientation="Vertical" Width="210" Margin="30,0,0,0">
                 <Label Content="Ejercicio #5" HorizontalContentAlignment="Center" FontWeight="Bold"/>
 
-                <Label Content="Texto, Numero o Simbolo"/>
+                <Label Content="Texto, Numero o Simbolo (Cadena 1)"/>
                 <TextBox x:Name="Cadena1TextBox" Height="25"/>
 
-                <Label Content="Texto, Numero o Simbolo" Margin="0,10,0,0"/>
+                <Label Content="Texto, Numero o Simbolo (Cadena 2)" Margin="0,10,0,0"/>
                 <TextBox x:Name="Cadena2TextBox" Height="25"/>
                 <!--—————————————————————————————————[ Ordenar A-Z ]—————————————————————————————————-->
                 <Button x:Name="OrdenarButton" Click="OrdenarButton_Click" Margin="0,15,0,0" HorizontalAlignment="Center" >
@@ -52,7 +52,7 @@
                 </Button>
                 <!--—————————————————————————————————[ Ordenado TextBox ]—————————————————————————————————-->
                 <Label Content="Ordenado" Margin="0,10,0,0"/>
-                <TextBox x:Name="OrdenadoTextBox" Height="25"/>
+                <TextBox x:Name="OrdenadoTextBox" Height="25" IsReadOnly="True"/>
             </StackPanel>
             <!--——————————————————————————————————————————————————————————————————————————————————————————————————————-->
         </StackPanel>
