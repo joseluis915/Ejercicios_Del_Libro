@@ -65,7 +65,7 @@
                     </StackPanel>
                 </Button>
                 <!--—————————————————————————————————[ DuenoMascota ListBox ]—————————————————————————————————-->
-                <TextBox x:Name="DuenoMascotaTextBox" Height="100" Margin="0,10,0,0" />
+                <TextBox x:Name="DuenoMascotaTextBox" Height="100" Margin="0,10,0,0" IsReadOnly="True" />
             </StackPanel>
 
             <!--———————————————————————————————————————————[ EJERCICIO #4 ]———————————————————————————————————————————-->
@@ -85,7 +85,7 @@
 
                 <!--—————————————————————————————————[ Resultado de busqueda ]—————————————————————————————————-->
                 <Label Content="Tipo de Neumatico" Margin="0,10,0,0"/>
-                <TextBox x:Name="nResultadoTextbox"  Height="30" />
+                <TextBox x:Name="nResultadoTextbox"  Height="30" IsReadOnly="True" />
 
                 <!--—————————————————————————————————[ Boton Limpiar Todo ]—————————————————————————————————-->
                 <Button x:Name="LimpiarTodoButton" Click="LimpiarTodoButton_Click" Margin="0,70,0,0" HorizontalAlignment="Center" Height="40">
