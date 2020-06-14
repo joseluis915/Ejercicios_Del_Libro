@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,6 +22,7 @@ namespace Ejercicios_Del_Libro.UI
         {
             InitializeComponent();
         }
+        //——————————————————————————————————————————————[ EJERCICIO #3 ]——————————————————————————————————————————————
         private void MostarButton_Click(object sender, RoutedEventArgs e)
         {
             DateTime Hoy = DateTime.Now;
@@ -31,6 +33,22 @@ namespace Ejercicios_Del_Libro.UI
 
             //HoraTextBox.Text = Hoy.ToShortTimeString();
             //FechaTextBox.Text = Hoy.ToShortDateString();
+        }
+        //——————————————————————————————————————————————[ EJERCICIO #5 ]——————————————————————————————————————————————
+        private void OrdenarButton_Click(object sender, RoutedEventArgs e)
+        {
+            string cadena = Cadena1TextBox.Text + Cadena2TextBox.Text; 
+            string ordenado = new String(cadena.OrderBy(z => z).ToArray());
+            OrdenadoTextBox.Text = Convert.ToString(ordenado);
+        }
+        //——————————————————————————————————————————————[ BOTON LIMPIAR ]——————————————————————————————————————————————
+        private void LimpiarTodoButton_Click(object sender, RoutedEventArgs e)
+        {
+            Cadena1TextBox.Clear();
+            Cadena2TextBox.Clear();
+            HoraTextBox.Clear();
+            FechaTextBox.Clear();
+            OrdenadoTextBox.Clear();
         }
     }
 }
