@@ -27,7 +27,7 @@ namespace Ejercicios_Del_Libro.UI
         {
             DateTime Hoy = DateTime.Now;
             HoraTextBox.Text = Hoy.ToString("hh:mm:ss tt");
-            FechaTextBox.Text = Hoy.ToString("dd/MMMMM/yyyy");
+            FechaTextBox.Text = Hoy.ToString("dd/MMMM/yyyy");
 
             //——————[ Mostrar la fecha y hora actual con el formato que tiene la hora del sistema. ]——————
 
